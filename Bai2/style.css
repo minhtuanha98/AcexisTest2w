@@ -1,0 +1,23 @@
+html, body {
+    overflow-y:scroll ;
+
+}
+tr,td {
+	border: 1px solid black;
+  	border-collapse: collapse;
+  	padding: 10px;
+}
+
+#table {
+  counter-reset: section;
+}
+
+tr {
+  counter-increment: 0;
+}
+
+tr:nth-child(1){
+	background-color: yellow;
+	counter-increment: section;
+  	content: counter(section);
+}
